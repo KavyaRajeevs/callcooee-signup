@@ -1,6 +1,7 @@
 "use client"
-import { useState, useEffect } from "react"
-import { Phone, Check, ArrowLeft, Eye, EyeOff, Loader2 } from "lucide-react"
+import { useState } from "react"
+import { Check, ArrowLeft, Eye, EyeOff, Loader2 } from "lucide-react"
+import Image from "next/image";
 
 // Mock data matching Cooee's actual countries and structure
 const mockCountries = {
@@ -229,7 +230,7 @@ export default function CooeeSignupFlow() {
 
                     <div className="mb-8">
                         <h1 className="text-4xl font-bold mb-4">Select a country</h1>
-                        <p className="text-gray-400 text-lg">What country's mobile number do you want?</p>
+                        <p className="text-gray-400 text-lg">What country&apos;s mobile number do you want?</p>
                     </div>
 
                     {/* Country Dropdown */}
@@ -308,7 +309,7 @@ export default function CooeeSignupFlow() {
                             <div className="bg-gray-800 p-6 rounded-lg">
                                 <div className="text-2xl font-bold text-green-400 mb-3">2</div>
                                 <p className="text-gray-300">
-                                    We're always expanding Cooee's reach. If your country isn't supported yet, we'll
+                                    We&apos;re always expanding Cooee&apos;s reach. If your country isn&apos;t supported yet, we&apos;ll
                                     notify you as soon as it is.
                                 </p>
                             </div>
@@ -486,7 +487,7 @@ export default function CooeeSignupFlow() {
                     </div>
 
                     <div className="mb-6 text-center">
-                        <h1 className="text-4xl font-bold mb-2">You're so close!</h1>
+                        <h1 className="text-4xl font-bold mb-2">You&apos;re so close!</h1>
                         <p className="text-gray-400">
                             Your preferences have been saved. Please register to make the payment.
                         </p>
@@ -496,7 +497,7 @@ export default function CooeeSignupFlow() {
                         {/* OAuth Buttons */}
                         <div>
                             <button className="w-full bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded-lg p-4 flex items-center justify-center space-x-3 mb-4 transition-colors">
-                                <img
+                                <Image
                                     src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png"
                                     alt="Google logo"
                                     className="w-5 h-5"
@@ -505,7 +506,7 @@ export default function CooeeSignupFlow() {
                             </button>
 
                             <button className="w-full bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded-lg p-4 flex items-center justify-center space-x-3 mb-6 transition-colors">
-                                <img
+                                <Image
                                     src="https://cdn.brandfetch.io/idnrCPuv87/theme/light/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
                                     alt="Apple logo"
                                     className="w-5 h-5"
@@ -518,7 +519,7 @@ export default function CooeeSignupFlow() {
                             </div>
 
                             <div className="text-center text-xs text-gray-400">
-                                By continuing to register, you agree to Cooee's{" "}
+                                By continuing to register, you agree to Cooee&apos;s{" "}
                                 <span className="text-green-400 cursor-pointer">
             Terms and Conditions
           </span>{" "}
@@ -852,7 +853,7 @@ export default function CooeeSignupFlow() {
 
                     {/* Next Steps */}
                     <div className="bg-teal-900/30 border border-teal-600 rounded-xl p-6 mb-8">
-                        <h3 className="text-xl font-semibold mb-4 text-teal-200">What's Next?</h3>
+                        <h3 className="text-xl font-semibold mb-4 text-teal-200">What&apos;s Next?</h3>
                         <div className="text-left space-y-3 text-teal-100">
                             <div className="flex items-start space-x-3">
                                 <div className="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
